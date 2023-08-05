@@ -6,21 +6,17 @@ import {
   InputGroup,
   InputLeftElement,
   Icon,
-  HStack,
-  ButtonGroup,
-  IconButton,
 } from '@chakra-ui/react';
 
 import SearchIcon from '@mui/icons-material/Search';
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 import Nav from '../Components/Nav';
+import LatestEvent from '../Components/LatestEvent';
 
 export default function LandingPage() {
   return (
     <Box bgImage={'url(/img/landingPageHero.png)'} bgSize={'cover'} h={'580px'}>
-      <VStack className="sc" gap={0} h={'100%'}>
+      <VStack className="sc" gap={0} h={'100%'} mb={16}>
         <Nav />
 
         <VStack
@@ -66,22 +62,9 @@ export default function LandingPage() {
         </VStack>
       </VStack>
 
-      <Box className="sc" py={16}>
-        <HStack justify={'space-between'}>
-          <Text className="sh">Latest Event</Text>
+      <LatestEvent style={{ mb: 16 }} />
 
-          <ButtonGroup gap={2}>
-            <IconButton
-              icon={<Icon as={KeyboardArrowLeftIcon} />}
-              variant={'outline'}
-            />
-            <IconButton
-              icon={<Icon as={KeyboardArrowRightIcon} />}
-              variant={'outline'}
-            />
-          </ButtonGroup>
-        </HStack>
-      </Box>
+      <LatestEvent />
     </Box>
   );
 }

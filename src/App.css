@@ -1,5 +1,6 @@
 * {
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth !important;
   -webkit-tap-highlight-color: transparent !important;
 }
 
@@ -16,6 +17,17 @@
   --p-800: #130d48;
   --p-900: #0c083b;
 }
+
+.hs {
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hs::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
 a {
   text-decoration: none !important;
 }
@@ -51,6 +63,11 @@ a {
 .heroLogInBtn:hover {
   background: rgb(215, 215, 215) !important;
   color: black !important;
+}
+
+.bs {
+  /* Shadow/High */
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.06);
 }
 
 input:focus {
