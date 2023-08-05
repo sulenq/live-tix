@@ -19,7 +19,7 @@ export default function Categories(props) {
         </Text>
       </HStack>
 
-      <SimpleGrid columns={[1, 2, null, 3, 4]} gap={6}>
+      <SimpleGrid columns={[1, 2, 3, 4]} gap={6}>
         {categories?.map((c, i) => {
           return (
             <Box

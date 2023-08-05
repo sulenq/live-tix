@@ -25,7 +25,7 @@ export default function BottomBanner(props) {
         zIndex={1}
       ></Box>
 
-      <Box className="sc">
+      <Box className="sc" pb={sw < 1192 && 6}>
         <Stack
           // direction={'row'}
           direction={sw >= 1192 ? 'row' : 'column'}
