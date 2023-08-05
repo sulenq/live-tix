@@ -111,7 +111,7 @@ export default function Nav() {
         )}
       </HStack>
 
-      <ButtonGroup>
+      <HStack gap={4}>
         {sw < 770 ? (
           <NavMobile />
         ) : (
@@ -126,8 +126,9 @@ export default function Nav() {
         >
           Sign Up
         </Button>
+
         <Button className="heroLogInBtn">Log In</Button>
-      </ButtonGroup>
+      </HStack>
     </HStack>
   );
 }

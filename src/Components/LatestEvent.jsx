@@ -7,6 +7,7 @@ import {
   IconButton,
   Image,
   VStack,
+  useColorMode,
 } from '@chakra-ui/react';
 
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
@@ -25,13 +26,14 @@ export default function LatestEvent(props) {
   ];
 
   // Utils
+  const { colorMode } = useColorMode();
+
   const containerRef = useRef(null);
   const handleNextClick = () => {
     if (containerRef.current) {
       containerRef.current.scrollLeft += 300;
     }
   };
-
   const handlePrevClick = () => {
     if (containerRef.current) {
       containerRef.current.scrollLeft -= 300;
@@ -39,7 +41,7 @@ export default function LatestEvent(props) {
   };
 
   return (
-    <Box className="sc" px={0} {...props.style}>
+    <Box className="sc" px={0} {...props?.style}>
       <HStack justify={'space-between'} px={4} mb={6}>
         <Text className="sh" lineHeight={'normal'}>
           Latest Event
@@ -74,7 +76,7 @@ export default function LatestEvent(props) {
                 maxW={window.innerWidth >= 350 ? '280px' : '240px'}
                 className="bs"
                 scrollSnapAlign={'center'}
-                border={'1px solid var(--divider)'}
+                border={colorMode === 'dark' && '1px solid var(--divider)'}
                 borderRadius={24}
                 cursor={'pointer'}
               >

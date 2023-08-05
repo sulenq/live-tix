@@ -12,10 +12,23 @@ import SearchIcon from '@mui/icons-material/Search';
 
 import Nav from '../Components/Nav';
 import LatestEvent from '../Components/LatestEvent';
+import Categories from '../Components/Categories';
+import UpcomingEvent from '../Components/UpcomingEvent';
+import BottomBanner from '../Components/BottomBanner';
+import Partner from '../Components/Partner';
+// import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 export default function LandingPage() {
   return (
     <Box bgImage={'url(/img/landingPageHero.png)'} bgSize={'cover'} h={'580px'}>
+      {/* <ColorModeSwitcher
+        position={'fixed'}
+        bottom={0}
+        right={0}
+        size={'lg'}
+        zIndex={99}
+      /> */}
+
       <VStack className="sc" gap={0} h={'100%'} mb={16}>
         <Nav />
 
@@ -63,6 +76,14 @@ export default function LandingPage() {
       </VStack>
 
       <LatestEvent style={{ pb: 16 }} />
+
+      <Categories style={{ pb: 16 }} />
+
+      <UpcomingEvent style={{ pb: 16 }} />
+
+      <BottomBanner style={{ mt: 4 }} />
+
+      <Partner style={{ pt: 16, pb: 24 }} />
     </Box>
   );
 }
