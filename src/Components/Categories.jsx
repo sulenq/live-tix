@@ -24,6 +24,7 @@ export default function Categories(props) {
           return (
             <Box
               key={i}
+              cursor={'pointer'}
               borderRadius={24}
               overflow={'hidden'}
               position={'relative'}

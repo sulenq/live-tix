@@ -75,7 +75,7 @@ export default function LandingPage() {
         </VStack>
       </VStack>
 
-      <LatestEvent style={{ pb: 16 }} />
+      <LatestEvent style={{ pb: 14 }} />
 
       <Categories style={{ pb: 16 }} />
 

@@ -72,6 +72,7 @@ export default function UpcomingEvent(props) {
             <Box
               key={i}
               //   maxW={'380px'}
+              cursor={'pointer'}
               borderRadius={24}
               className="bs"
               border={colorMode === 'dark' && '1px solid var(--divider)'}

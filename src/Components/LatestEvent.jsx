@@ -51,11 +51,15 @@ export default function LatestEvent(props) {
           <IconButton
             icon={<Icon as={KeyboardArrowLeftIcon} />}
             variant={'outline'}
+            _hover={{ bg: 'transparent' }}
+            _active={{ bg: 'var(--divider)' }}
             onClick={handlePrevClick}
           />
           <IconButton
             icon={<Icon as={KeyboardArrowRightIcon} />}
             variant={'outline'}
+            _hover={{ bg: 'transparent' }}
+            _active={{ bg: 'var(--divider)' }}
             onClick={handleNextClick}
           />
         </ButtonGroup>
