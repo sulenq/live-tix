@@ -49,7 +49,7 @@ export const myTheme = extendTheme({
       baseStyle: props => ({
         dialog: {
           bg: props.colorMode === 'dark' ? '#18191b' : 'white',
-          transition: '100ms',
+          // transition: '100ms',
           // border: '1px solid var(--divider)',
         },
       }),
@@ -58,7 +58,7 @@ export const myTheme = extendTheme({
       baseStyle: props => ({
         dialog: {
           bg: props.colorMode === 'dark' ? '#18191b' : 'white',
-          transition: '100ms',
+          // transition: '100ms',
           // border: '1px solid var(--divider)',
         },
       }),

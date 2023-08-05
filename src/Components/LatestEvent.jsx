@@ -22,7 +22,6 @@ export default function LatestEvent(props) {
     { img: '2.png', location: '', date: '', name: '', price: 150000 },
     { img: '3.png', location: '', date: '', name: '', price: 150000 },
     { img: '4.png', location: '', date: '', name: '', price: 150000 },
-    { img: '2.png', location: '', date: '', name: '', price: 150000 },
   ];
 
   // Utils
@@ -65,17 +64,17 @@ export default function LatestEvent(props) {
         ref={containerRef}
         overflow={'auto'}
         pb={2}
-        px={4}
         scrollSnapType={'x mandatory'}
       >
-        <HStack w={'max-content'} gap={6}>
+        <HStack w={'max-content'} px={4} gap={6}>
           {latestEvent?.map((e, i) => {
             return (
               <Box
                 key={i}
-                maxW={'260px'}
+                maxW={window.innerWidth >= 350 ? '280px' : '240px'}
                 className="bs"
                 scrollSnapAlign={'center'}
+                border={'1px solid var(--divider)'}
                 borderRadius={24}
                 cursor={'pointer'}
               >

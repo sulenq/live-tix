@@ -32,7 +32,7 @@ export default function LandingPage() {
             fontSize={64}
             fontWeight={900}
             textAlign={'center'}
-            lineHeight={'shorter'}
+            lineHeight={'70px'}
             mb={4}
           >
             Life is a Live
@@ -62,9 +62,7 @@ export default function LandingPage() {
         </VStack>
       </VStack>
 
-      <LatestEvent style={{ mb: 16 }} />
-
-      <LatestEvent />
+      <LatestEvent style={{ pb: 16 }} />
     </Box>
   );
 }
