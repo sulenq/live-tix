@@ -42,7 +42,7 @@ export default function LatestEvent(props) {
 
   return (
     <Box className="sc" px={0} {...props?.style}>
-      <HStack justify={'space-between'} px={4} mb={6}>
+      <HStack justify={'space-between'} px={6} mb={6}>
         <Text className="sh" lineHeight={'normal'}>
           Latest Event
         </Text>
@@ -72,7 +72,7 @@ export default function LatestEvent(props) {
         pb={2}
         scrollSnapType={'x mandatory'}
       >
-        <HStack w={'max-content'} px={4} gap={6}>
+        <HStack w={'max-content'} px={6} gap={6}>
           {latestEvent?.map((e, i) => {
             return (
               <Box
